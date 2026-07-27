@@ -1,0 +1,9 @@
+version: 1.0.0
+ignore:
+  - id: endorignore-1
+    username: osircar@endor.ai@google
+    update_time: 2026-07-27 14:02:05 UTC
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    vuln_id: GHSA-w73w-5m7g-f7qc
+    reason: risk-accepted
+    comments: I want this gone!
