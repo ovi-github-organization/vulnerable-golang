@@ -1,0 +1,6 @@
+version: "1.0.0"
+ignore:
+  - id: endorignore-1
+    finding_name: "PoC finding"
+    vuln_id: CVE-2025-12345
+    reason: "PoC entry written by prdismissalpoc, not a real dismissal"
