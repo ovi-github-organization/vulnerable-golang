@@ -16,20 +16,7 @@ ignore:
     comments: Not not dude
   - id: endorignore-3
     username: osircar@endor.ai@google
-    update_time: 2026-08-11 05:41:15 UTC
+    update_time: 2026-08-11 06:07:18 UTC
     finding_name: 'Potential secret leak Asana Client Secret: ID #c83dfc'
-    vuln_id: '#c83dfc'
-    reason: risk-accepted
-    comments: not a secret leak
-  - id: endorignore-4
-    username: osircar@endor.ai@google
-    update_time: 2026-08-11 05:53:10 UTC
-    finding_name: Potential secret leak Asana Client Secret
-    vuln_id: c83dfc
-    reason: risk-accepted
-  - id: endorignore-5
-    username: osircar@endor.ai@google
-    update_time: 2026-08-11 05:55:29 UTC
-    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
-    vuln_id: 75cd15
+    extra_key: '675bc43b43e88b87ac468111Asana Client Secret: ID #c83dfc'
     reason: risk-accepted
