@@ -45,3 +45,8 @@ ignore:
     update_time: 2026-08-12 03:08:59 UTC
     finding_name: Use of Hard-coded Credentials
     reason: risk-accepted
+  - id: endorignore-9
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 03:31:22 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #49467d'
+    reason: risk-accepted
