@@ -35,3 +35,8 @@ ignore:
     update_time: 2026-08-12 02:57:11 UTC
     finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
     reason: risk-accepted
+  - id: endorignore-7
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 03:03:21 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #8ca367'
+    reason: risk-accepted
