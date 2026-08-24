@@ -28,6 +28,16 @@ func main() {
 
 	catchSAST()
 
+	pat = "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120xrlxxx"
+	fmt.Printf("I am randomly printing a PAT %s", pat)
+	newsecret = "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120yyyxxx"
+	fmt.Printf("I am randomly printing a new secret %s", newsecret)
+
+	newsecret = "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120yyyzxx"
+	fmt.Printf("I am randomly printing a new secret %s", newsecret)
+	fmt.Println("ASANA_CLIENT_SECRET=0f9a3a5d2b8e4f3a95a2ef1234567890")
+	fmt.Println("AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE")
+
 }
 
 func catchSAST() {
