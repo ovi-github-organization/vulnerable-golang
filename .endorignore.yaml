@@ -14,17 +14,6 @@ ignore:
     vuln_id: CVE-2023-7104
     reason: risk-accepted
     comments: Not not dude
-  - id: endorignore-3
-    username: osircar@endor.ai@google
-    update_time: 2026-08-11 10:14:19 UTC
-    finding_name: 'Potential secret leak Generic API Key: ID #c3a16a'
-    reason: false-positive
-    comments: '"Remove this secret as it is a secret no more!'
-  - id: endorignore-4
-    username: osircar@endor.ai@google
-    update_time: 2026-08-11 16:53:17 UTC
-    finding_name: 'Potential secret leak Asana Client Secret: ID #c83dfc'
-    reason: false-positive
   - id: endorignore-5
     username: osircar@endor.ai@google
     update_time: 2026-08-11 16:53:40 UTC
