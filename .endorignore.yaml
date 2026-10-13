@@ -14,3 +14,45 @@ ignore:
     vuln_id: CVE-2023-7104
     reason: risk-accepted
     comments: Not not dude
+  - id: endorignore-5
+    username: osircar@endor.ai@google
+    update_time: 2026-08-11 16:53:40 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #f49b48'
+    reason: risk-accepted
+  - id: endorignore-6
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 02:57:11 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: risk-accepted
+  - id: endorignore-7
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 03:03:21 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #8ca367'
+    reason: risk-accepted
+  - id: endorignore-8
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 03:08:59 UTC
+    finding_name: Use of Hard-coded Credentials
+    reason: risk-accepted
+  - id: endorignore-9
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 03:31:22 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #49467d'
+    reason: risk-accepted
+  - id: endorignore-10
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 04:54:52 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #76e016'
+    reason: risk-accepted
+  - id: endorignore-11
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 07:25:14 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #9cac06'
+    reason: risk-accepted
+  - id: endorignore-12
+    username: osircar@endor.ai@google
+    update_time: 2026-08-12 07:25:14 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #76e016'
+    extra_key: '6903a4aad9de8d1b9c9cdca3Code Injection - Non-static command detected inside `exec.Cmd`: ID #76e016'
+    reason: risk-accepted    
+
