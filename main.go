@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+	// test comment
 	fmt.Println("Hello world!")
 
 	fmt.Println("Hello world")
