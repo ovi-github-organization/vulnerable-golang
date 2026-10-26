@@ -8,3 +8,24 @@ ignore:
     reason: risk-accepted
     comments: I want this gone!
   
+  - id: endorignore-2
+    username: ovijeet-endor
+    update_time: 2026-10-26 04:36:44 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    extra_key: '67f1633048a8edaea1775a6dCode Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: false-positive
+    comments: <why this is safe>
+  - id: endorignore-3
+    username: ovijeet-endor
+    update_time: 2026-10-26 04:36:44 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    extra_key: '677f6aeefd6be28562e9a453Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: false-positive
+    comments: <why this is safe>
+  - id: endorignore-4
+    username: ovijeet-endor
+    update_time: 2026-10-26 04:36:44 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    extra_key: '67f1633e48a8edaea1775a81Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: false-positive
+    comments: <why this is safe>
