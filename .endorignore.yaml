@@ -21,3 +21,10 @@ ignore:
     extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #3cf085'
     reason: false-positive
     comments: leak!
+  - id: endorignore-4
+    username: ovijeet-endor
+    update_time: 2026-10-27 04:18:13 UTC
+    finding_name: 'Potential secret leak Asana Client Secret: ID #c83dfc'
+    extra_key: '674097f763608a8bb02ed710Asana Client Secret: ID #c83dfc'
+    reason: false-positive
+    comments: sss
