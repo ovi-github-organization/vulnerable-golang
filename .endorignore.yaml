@@ -15,3 +15,9 @@ ignore:
     extra_key: '67f1633048a8edaea1775a6dPossible SQL injection risk in Go applications due to tainted input in SQL queries.: ID #0b4e73'
     reason: false-positive
     comments: Because i say so
+  - id: endorignore-3
+    username: ovijeet-endor
+    update_time: 2026-10-27 15:16:36 UTC
+    finding_name: 'Possible SQL injection risk in Go applications due to tainted input in SQL queries.: ID #0b4e73'
+    extra_key: '677f6aeefd6be28562e9a453Possible SQL injection risk in Go applications due to tainted input in SQL queries.: ID #0b4e73'
+    reason: false-positive
