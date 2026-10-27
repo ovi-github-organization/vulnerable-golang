@@ -14,3 +14,10 @@ ignore:
     extra_key: '67f1633e48a8edaea1775a81Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
     reason: false-positive
     comments: <why this is safe>
+  - id: endorignore-3
+    username: ovijeet-endor
+    update_time: 2026-10-27 04:11:05 UTC
+    finding_name: 'Invalid GitLab Personal Access Token Routable: ID #3cf085'
+    extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #3cf085'
+    reason: false-positive
+    comments: leak!
