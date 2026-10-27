@@ -44,3 +44,10 @@ ignore:
     expiration_date: 2026-10-28
     expire_if_fix_available: true
     comments: hi
+  - id: endorignore-7
+    username: ovijeet-endor
+    update_time: 2026-10-27 09:12:38 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    extra_key: '67f1633048a8edaea1775a6dCode Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: false-positive
+    comments: false positive
