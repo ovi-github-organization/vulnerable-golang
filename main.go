@@ -1,7 +1,9 @@
 package main
 
 import (
+	"database/sql"
 	"fmt"
+	"net/http"
 	"os"
 	"os/exec"
 
@@ -21,6 +23,7 @@ func main() {
 	newsecret := "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120yyyxxx"
 	fmt.Printf("I am randomly printing a new secret %s", newsecret)
 	catchSAST()
+	handleOrderSearch(nil, nil)
 	newsecret = "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120yyyzxx"
 	fmt.Printf("I am randomly printing a new secret %s", newsecret)
 	fmt.Println("ASANA_CLIENT_SECRET=0f9a3a5d2b8e4f3a95a2ef1234567890")
@@ -46,4 +49,29 @@ func catchSAST() {
 	}
 
 	fmt.Println(string(output))
+}
+
+// SQL injection: user input concatenated into query
+func handleOrderSearch(w http.ResponseWriter, r *http.Request) {
+	db, err := sql.Open("postgres", "postgres://user:password@host:port/dbname")
+	if err != nil {
+		http.Error(w, "db error", http.StatusInternalServerError)
+		return
+	}
+	defer db.Close()
+
+	customer := r.URL.Query().Get("customer")
+	query := "SELECT id, total FROM orders WHERE customer = '" + customer + "' ORDER BY " + r.URL.Query().Get("sort")
+	rows, err := db.Query(query)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var id int
+		var total float64
+		rows.Scan(&id, &total)
+		fmt.Fprintf(w, "%d,%.2f\n", id, total)
+	}
 }
