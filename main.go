@@ -1,14 +1,20 @@
 package main
 
 import (
+	"database/sql"
 	"fmt"
-	// _ "github.com/dgrijalva/jwt-go"
-	// _ "github.com/gogo/protobuf/proto"
-	// _ "github.com/hashicorp/golang-lru"
-	// _ "github.com/owncast/owncast/logging"
+	"net/http"
+	"os"
+	"os/exec"
+
+	_ "github.com/dgrijalva/jwt-go"
+	_ "github.com/gogo/protobuf/proto"
+	_ "github.com/hashicorp/golang-lru"
+	_ "github.com/owncast/owncast/logging"
 )
 
 func main() {
+	// test comment.
 	fmt.Println("Hello world!")
 
 	fmt.Println("Hello world")
@@ -16,9 +22,56 @@ func main() {
 	fmt.Printf("I am randomly printing a PAT %s", pat)
 	newsecret := "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120yyyxxx"
 	fmt.Printf("I am randomly printing a new secret %s", newsecret)
-
+	catchSAST()
+	handleOrderSearch(nil, nil)
 	newsecret = "glpat-Qr-GyZZiilXWYGuScic8gW86MQp1OmV0Z3ZsCw.01.120yyyzxx"
 	fmt.Printf("I am randomly printing a new secret %s", newsecret)
 	fmt.Println("ASANA_CLIENT_SECRET=0f9a3a5d2b8e4f3a95a2ef1234567890")
 	fmt.Println("AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE")
+
+}
+
+func catchSAST() {
+	if len(os.Args) < 2 {
+		fmt.Println("Usage: go run main.go <command>")
+		return
+	}
+
+	userInput := os.Args[1]
+
+	// Intentionally vulnerable: user-controlled input is executed by a shell.
+	cmd := exec.Command("sh", "-c", userInput)
+
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		fmt.Println("Command failed:", err)
+		return
+	}
+
+	fmt.Println(string(output))
+}
+
+// SQL injection: user input concatenated into query
+func handleOrderSearch(w http.ResponseWriter, r *http.Request) {
+	db, err := sql.Open("postgres", "postgres://user:password@host:port/dbname")
+	if err != nil {
+		http.Error(w, "db error", http.StatusInternalServerError)
+		return
+	}
+	defer db.Close()
+
+	customer := r.URL.Query().Get("customer")
+	query := "SELECT id, total FROM orders WHERE customer = '" + customer + "' ORDER BY " + r.URL.Query().Get("sort")
+	rows, err := db.Query(query)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var id int
+		var total float64
+		rows.Scan(&id, &total)
+		fmt.Fprintf(w, "%d,%.2f\n", id, total)
+	}
 }
