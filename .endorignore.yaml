@@ -8,3 +8,10 @@ ignore:
     reason: risk-accepted
     comments: I want this gone!
  
+  - id: endorignore-2
+    username: ovijeet-endor
+    update_time: 2026-10-27 14:54:30 UTC
+    finding_name: 'Possible SQL injection risk in Go applications due to tainted input in SQL queries.: ID #0b4e73'
+    extra_key: '67f1633048a8edaea1775a6dPossible SQL injection risk in Go applications due to tainted input in SQL queries.: ID #0b4e73'
+    reason: false-positive
+    comments: Because i say so
