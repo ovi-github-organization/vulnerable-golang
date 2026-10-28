@@ -8,9 +8,37 @@ ignore:
     reason: risk-accepted
     comments: I want this gone!
   - id: endorignore-2
-    username: osircar@endor.ai@google
-    update_time: 2026-08-06 03:34:24 UTC
-    finding_name: 'CVE-2023-7104:'
-    vuln_id: CVE-2023-7104
-    reason: risk-accepted
-    comments: Not not dude
+    username: ovijeet-endor
+    update_time: 2026-10-26 14:52:35 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    extra_key: '67f1633e48a8edaea1775a81Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: false-positive
+    comments: <why this is safe>
+  - id: endorignore-3
+    username: ovijeet-endor
+    update_time: 2026-10-28 08:35:41 UTC
+    finding_name: 'GO-2026-6612: Double flow control refund on HTTP/2 server streams in net/http'
+    parent_name: go://github.com/endorlabs/vulnerable-golang@pr/13
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6612
+    extra_key: GO-2026-6612
+    reason: false-positive
+    comments: This is a false positive
+  - id: endorignore-4
+    username: ovijeet-endor
+    update_time: 2026-10-28 08:39:10 UTC
+    finding_name: 'GO-2026-6610: HTTP/2 transport accepts malformed framing-related headers in net/http'
+    parent_name: go://github.com/endorlabs/vulnerable-golang@pr/13
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6610
+    extra_key: GO-2026-6610
+    reason: false-positive
+  - id: endorignore-5
+    username: ovijeet-endor
+    update_time: 2026-10-28 08:39:10 UTC
+    finding_name: 'GO-2026-6610: HTTP/2 transport accepts malformed framing-related headers in net/http'
+    parent_name: go://github.com/endorlabs/vulnerable-golang@pr/13
+    dependency_name: go://stdlib@go1.26.6
+    vuln_id: GO-2026-6610
+    extra_key: GO-2026-6610
+    reason: false-positive
