@@ -24,3 +24,21 @@ ignore:
     extra_key: GO-2026-6612
     reason: false-positive
     comments: This is a false positive
+  - id: endorignore-4
+    username: ovijeet-endor
+    update_time: 2026-10-28 08:39:10 UTC
+    finding_name: 'GO-2026-6610: HTTP/2 transport accepts malformed framing-related headers in net/http'
+    parent_name: go://github.com/endorlabs/vulnerable-golang@pr/13
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6610
+    extra_key: GO-2026-6610
+    reason: false-positive
+  - id: endorignore-5
+    username: ovijeet-endor
+    update_time: 2026-10-28 08:39:10 UTC
+    finding_name: 'GO-2026-6610: HTTP/2 transport accepts malformed framing-related headers in net/http'
+    parent_name: go://github.com/endorlabs/vulnerable-golang@pr/13
+    dependency_name: go://stdlib@go1.26.6
+    vuln_id: GO-2026-6610
+    extra_key: GO-2026-6610
+    reason: false-positive
