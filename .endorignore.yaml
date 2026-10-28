@@ -14,3 +14,13 @@ ignore:
     extra_key: '67f1633e48a8edaea1775a81Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
     reason: false-positive
     comments: <why this is safe>
+  - id: endorignore-3
+    username: ovijeet-endor
+    update_time: 2026-10-28 08:35:41 UTC
+    finding_name: 'GO-2026-6612: Double flow control refund on HTTP/2 server streams in net/http'
+    parent_name: go://github.com/endorlabs/vulnerable-golang@pr/13
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6612
+    extra_key: GO-2026-6612
+    reason: false-positive
+    comments: This is a false positive
