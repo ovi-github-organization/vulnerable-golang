@@ -1,0 +1,11 @@
+version: 1.0.0
+ignore:
+  - id: endorignore-1
+    username: ovijeet-endor
+    update_time: 2026-10-28 17:07:41 UTC
+    finding_name: 'GHSA-w73w-5m7g-f7qc: Authorization bypass in github.com/dgrijalva/jwt-go'
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    vuln_id: GHSA-w73w-5m7g-f7qc
+    extra_key: GHSA-w73w-5m7g-f7qc
+    reason: risk-accepted
+    comments: This is a false positive
