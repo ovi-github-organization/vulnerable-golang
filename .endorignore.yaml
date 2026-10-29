@@ -27,3 +27,9 @@ ignore:
     finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
     extra_key: '67f1633048a8edaea1775a6dCode Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
     reason: risk-accepted
+  - id: endorignore-5
+    username: ovijeet-endor
+    update_time: 2026-10-29 06:49:43 UTC
+    finding_name: 'Invalid GitLab Personal Access Token Routable: ID #8f46cb'
+    extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #8f46cb'
+    reason: risk-accepted
