@@ -48,3 +48,9 @@ ignore:
     extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #cfff79'
     reason: risk-accepted
     comments: This is a dummy test token
+  - id: endorignore-7
+    username: ovijeet-endor
+    update_time: 2026-11-05 15:24:24 UTC
+    finding_name: 'Invalid GitLab Personal Access Token Routable: ID #8f46cb'
+    extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #8f46cb'
+    reason: risk-accepted
