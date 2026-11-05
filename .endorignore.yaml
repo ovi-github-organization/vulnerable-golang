@@ -10,3 +10,10 @@ ignore:
     reason: risk-accepted
     comments: this is used in tests
 
+  - id: endorignore-2
+    username: ovijeet-endor
+    update_time: 2026-11-05 16:09:44 UTC
+    finding_name: 'Invalid GitLab Personal Access Token Routable: ID #cfff79'
+    extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #cfff79'
+    reason: risk-accepted
+    comments: This is a dummy secret used in UTs
