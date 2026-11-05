@@ -26,3 +26,11 @@ ignore:
     vuln_id: GO-2026-6612
     extra_key: GO-2026-6612
     reason: risk-accepted
+  - id: endorignore-4
+    username: ovijeet-endor
+    update_time: 2026-11-05 11:26:19 UTC
+    finding_name: 'GO-2026-5932: The golang.org/x/crypto/openpgp package is unmaintained, unsafe by design, and has known security issues'
+    dependency_name: go://golang.org/x/crypto@v0.54.0
+    vuln_id: GO-2026-5932
+    extra_key: GO-2026-5932
+    reason: risk-accepted
