@@ -63,3 +63,12 @@ ignore:
     vuln_id: GO-2026-6303
     extra_key: GO-2026-6303
     reason: risk-accepted
+  - id: endorignore-pr19-1
+    username: ovijeet-endor
+    update_time: 2026-11-06 13:15:02 UTC
+    finding_name: 'GO-2026-6354: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://golang.org/x/crypto@v0.54.0
+    vuln_id: GO-2026-6354
+    extra_key: GO-2026-6354
+    reason: risk-accepted
