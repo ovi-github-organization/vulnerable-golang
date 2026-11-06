@@ -72,3 +72,23 @@ ignore:
     vuln_id: GO-2026-6354
     extra_key: GO-2026-6354
     reason: risk-accepted
+  - id: endorignore-pr19-2
+    username: ovijeet-endor
+    update_time: 2026-11-06 13:19:30 UTC
+    finding_name: 'GO-2026-6866: Check all ancestor namespace transitions when rendering raw text in html in golang.org/x/net'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6866
+    extra_key: GO-2026-6866
+    reason: risk-accepted
+    comments: This is a false positive.
+  - id: endorignore-pr19-3
+    username: ovijeet-endor
+    update_time: 2026-11-06 13:19:30 UTC
+    finding_name: 'GO-2026-6809: Distrust compromised intermediate certificates in crypto/x509'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://stdlib@go1.26.6
+    vuln_id: GO-2026-6809
+    extra_key: GO-2026-6809
+    reason: risk-accepted
+    comments: We will remove it in the next PR
