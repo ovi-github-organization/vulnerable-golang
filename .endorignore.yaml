@@ -54,3 +54,12 @@ ignore:
     finding_name: 'Invalid GitLab Personal Access Token Routable: ID #8f46cb'
     extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #8f46cb'
     reason: risk-accepted
+  - id: endorignore-8
+    username: ovijeet-endor
+    update_time: 2026-11-06 06:45:13 UTC
+    finding_name: 'GO-2026-6303: Source-address critical option not enforced for non-public-key auth callbacks in golang.org/x/crypto/ssh'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://golang.org/x/crypto@v0.54.0
+    vuln_id: GO-2026-6303
+    extra_key: GO-2026-6303
+    reason: risk-accepted
