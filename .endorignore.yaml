@@ -1,0 +1,94 @@
+version: 1.0.0
+ignore:
+  - id: endorignore-1
+    username: ovijeet-endor
+    update_time: 2026-10-29 09:14:51 UTC
+    finding_name: 'GHSA-w73w-5m7g-f7qc: Authorization bypass in github.com/dgrijalva/jwt-go'
+    dependency_name: go://github.com/dgrijalva/jwt-go@v3.2.0+incompatible
+    vuln_id: GHSA-w73w-5m7g-f7qc
+    extra_key: GHSA-w73w-5m7g-f7qc
+    reason: risk-accepted
+    comments: this is used in tests
+
+  - id: endorignore-2
+    username: ovijeet-endor
+    update_time: 2026-11-04 02:54:02 UTC
+    finding_name: 'GO-2026-6612: Double flow control refund on HTTP/2 server streams in net/http'
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6612
+    extra_key: GO-2026-6612
+    reason: risk-accepted
+  - id: endorignore-3
+    username: ovijeet-endor
+    update_time: 2026-11-04 02:54:02 UTC
+    finding_name: 'GO-2026-6612: Double flow control refund on HTTP/2 server streams in net/http'
+    dependency_name: go://stdlib@go1.26.6
+    vuln_id: GO-2026-6612
+    extra_key: GO-2026-6612
+    reason: risk-accepted
+  - id: endorignore-4
+    username: ovijeet-endor
+    update_time: 2026-11-05 11:26:19 UTC
+    finding_name: 'GO-2026-5932: The golang.org/x/crypto/openpgp package is unmaintained, unsafe by design, and has known security issues'
+    dependency_name: go://golang.org/x/crypto@v0.54.0
+    vuln_id: GO-2026-5932
+    extra_key: GO-2026-5932
+    reason: risk-accepted
+  - id: endorignore-5
+    username: ovijeet-endor
+    update_time: 2026-11-05 12:10:39 UTC
+    finding_name: 'Code Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    extra_key: '67f1633048a8edaea1775a6dCode Injection - Non-static command detected inside `exec.Cmd`: ID #75cd15'
+    reason: risk-accepted
+    comments: This is a false positive
+  - id: endorignore-6
+    username: ovijeet-endor
+    update_time: 2026-11-05 12:23:31 UTC
+    finding_name: 'Invalid GitLab Personal Access Token Routable: ID #cfff79'
+    extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #cfff79'
+    reason: risk-accepted
+    comments: This is a dummy test token
+  - id: endorignore-7
+    username: ovijeet-endor
+    update_time: 2026-11-05 15:24:24 UTC
+    finding_name: 'Invalid GitLab Personal Access Token Routable: ID #8f46cb'
+    extra_key: '674097f763608a8bb02ed711GitLab Personal Access Token Routable: ID #8f46cb'
+    reason: risk-accepted
+  - id: endorignore-8
+    username: ovijeet-endor
+    update_time: 2026-11-06 06:45:13 UTC
+    finding_name: 'GO-2026-6303: Source-address critical option not enforced for non-public-key auth callbacks in golang.org/x/crypto/ssh'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://golang.org/x/crypto@v0.54.0
+    vuln_id: GO-2026-6303
+    extra_key: GO-2026-6303
+    reason: risk-accepted
+  - id: endorignore-pr19-1
+    username: ovijeet-endor
+    update_time: 2026-11-06 13:15:02 UTC
+    finding_name: 'GO-2026-6354: Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://golang.org/x/crypto@v0.54.0
+    vuln_id: GO-2026-6354
+    extra_key: GO-2026-6354
+    reason: risk-accepted
+  - id: endorignore-pr19-2
+    username: ovijeet-endor
+    update_time: 2026-11-06 13:19:30 UTC
+    finding_name: 'GO-2026-6866: Check all ancestor namespace transitions when rendering raw text in html in golang.org/x/net'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://golang.org/x/net@v0.56.0
+    vuln_id: GO-2026-6866
+    extra_key: GO-2026-6866
+    reason: risk-accepted
+    comments: This is a false positive.
+  - id: endorignore-pr19-3
+    username: ovijeet-endor
+    update_time: 2026-11-06 13:19:30 UTC
+    finding_name: 'GO-2026-6809: Distrust compromised intermediate certificates in crypto/x509'
+    parent_name: go://github.com/endorlabs/vulnerable-golang
+    dependency_name: go://stdlib@go1.26.6
+    vuln_id: GO-2026-6809
+    extra_key: GO-2026-6809
+    reason: risk-accepted
+    comments: We will remove it in the next PR
